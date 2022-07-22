@@ -1,0 +1,111 @@
+<html>
+<head>
+    <script type="text/javascript" src="./script.js"></script>
+    <title> Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div id="form">
+    <div class="a">
+        <div class="container">
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+                <div id="userform">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li class="active"><a href="#signup"  role="tab" data-toggle="tab">Sign up</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="signup">
+                        <form action="" id="myform" method="post">
+
+                            <div class="form-group">
+                            <lable> <p style="color:rgb(255, 242, 0);">Name<span class="req">*</span></p></lable><br>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" onblur="return valName()"><br><br>
+                            <span id="error"></span>
+                            <p class="help-block text-danger"></p>
+                            </div>
+
+
+                            <div class="form-group">
+                            <lable> <p style="color:rgb(255, 242, 0);">Email <span class="req">*</span></p></lable><br>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" onblur="return valEmail()"><br><br>
+                            <span id="error1"></span>
+                            <p class="help-block text-danger"></p>
+                            </div>
+
+
+                            <div class="form-group">
+                            <lable> <p style="color:rgb(255, 242, 0);">Age <span class="req">*</span></p></lable><br>
+                            <input type="number" class="form-control" id="age" placeholder="Enter your age" onblur="return valAge()"><br><br>
+                            <span id="error2"></span>
+                            <p class="help-block text-danger"></p>
+                            </div>
+
+                            
+                            <div class="form-group">
+                            <lable> <p style="color:rgb(255, 242, 0);">Which option best describes you?<span class="req">*</span></p></lable><br>
+                            <select name="Student" class="form-control" required>
+                                <option value="opt1" default>Student</option>
+                                <option value="opt2">Employee</option>
+                                <option value="opt3">Enterpreneur</option>
+                                <option value="opt4">Other</option>
+                            </select>
+                                                        <!--<span id="error"></span>-->
+
+                            <p class="help-block text-danger"></p>
+                            </div><br><br>
+
+                        
+                            
+                            <lable><p style="color:rgb(255, 242, 0);">Would you recommend geeksforgeeks to a friend?</lable></p><br>
+                            <input type="radio" id="r1" name= "r" value="Yes"><lable>Yes</lable><br>
+                            <input type="radio" id="r2" name= "r" value="No"><lable>No</lable><br>
+                            <input type="radio" id="r3" name= "r" value="Maybe"><lable>Maybe</lable><br><br>
+                            
+
+
+                            <div class="form-group">
+                            <lable><p style="color:rgb(255, 242, 0);">Languages and framework known</p><small>(Check any three)</small></lable><br>
+                            <input type="checkbox" id="c1" name="chk[]" value="C" onClick="return KeepCount()"><lable>C</lable><br>
+                            <input type="checkbox" id="c2" name="chk[]" value="C++" onClick="return KeepCount()"><lable>C++</lable><br>
+                            <input type="checkbox" id="c3" name="chk[]" value="C#" onClick="return KeepCount()"><lable>C#</lable><br>
+                            <input type="checkbox" id="c4" name="chk[]" value="Java" onClick="return KeepCount()"><lable>Java</lable><br>
+                            <input type="checkbox" id="c5" name="chk[]" value="Python" onClick="return KeepCount()"><lable>Python</lable><br>
+                            <input type="checkbox" id="c6" name="chk[]" value="Javascript" onClick="return KeepCount()"><lable>Javascript</lable><br>
+                            <input type="checkbox" id="c7" name="chk[]" value="React" onClick="return KeepCount()"><lable>React</lable><br>
+                            <input type="checkbox" id="c8" name="chk[]" value="Angular" onClick="return KeepCount()"><lable>Angular</lable><br>
+                            <input type="checkbox" id="c9" name="chk[]" value="Django" onClick="return KeepCount()"><lable>Django</lable><br>
+                            <input type="checkbox" id="c10" name="chk[]" value="Spring" onClick="return KeepCount()"><lable>Spring</lable><br><br>
+                            <p class="help-block text-danger"></p>
+                            </div>
+
+
+                            <label for="date"><p style="color:rgb(255, 242, 0);">Date of availability:<span class="req">*</span></p></label>
+                            <input type="date" id="setDate" name="setDate" class="stylit" onclick="disabledDate()" required></br></br>
+    
+
+                            <div class="form-group">
+                            <lable><p style="color:rgb(255, 242, 0);"> Add File</p></lable><br>
+                            <input type="file" class= "" id="file">
+                            <p class="help-block text-danger"></p>
+                            </div></br>
+
+
+                            <div class="form-group">
+                            <lable> <p style="color:rgb(255, 242, 0);">Any comments or suggestions</p></lable><br>
+                            <textarea name="Comments" class="form-control" rows="2" cols="30"></textarea><br><br><br>
+                            </div>
+                            
+                            <input type= "button" class="btn btn-larger btn-block" value="Submit" onClick="return val()">
+
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</html>
